@@ -245,7 +245,7 @@ def handle_conversion_page(subject, chapter):
         from_u = input("Masukkan satuan awal (teks persis seperti di atas): ").strip()
         if from_u.lower() in ('back','b'):
             return
-        if from_u.lower() in ('menu','m'):
+        if from_u.lower() in ('menu','M'):
             
             raise SystemExit("Returning to menu")
         if from_u.lower() == 'history':
@@ -314,7 +314,7 @@ def handle_conversion_page(subject, chapter):
                 break 
             elif nxt == 'b':
                 return  
-            elif nxt == 'm':
+            elif nxt == 'M':
                 raise SystemExit("back to menu")
             elif nxt == 'q':
                 if confirm_quit() is False:
