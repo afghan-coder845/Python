@@ -245,8 +245,7 @@ def handle_conversion_page(subject, chapter):
         from_u = input("Masukkan satuan awal (teks persis seperti di atas): ").strip()
         if from_u.lower() in ('back','b'):
             return
-        if from_u.lower() in ('menu','M'):
-            
+        if from_u.lower() in ('M'):
             raise SystemExit("Returning to menu")
         if from_u.lower() == 'history':
             show_history(); input("Enter to continue..."); continue
